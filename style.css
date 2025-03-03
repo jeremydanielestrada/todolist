@@ -1,0 +1,28 @@
+.card {
+  background-color: #5c7285 !important;
+}
+
+li {
+  list-style: none;
+  font-size: x-large;
+  margin-left: 60px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
