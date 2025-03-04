@@ -1,13 +1,3 @@
-// document.querySelector("form").addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   if (document.querySelector("#task").value === "") {
-//     alert("Please enter a task");
-//   } else {
-//     taskCreations();
-//     document.querySelector("#task").value = "";
-//   }
-// });
-
 let taskList = [];
 
 document.querySelector("button").addEventListener("click", function (e) {
@@ -19,6 +9,7 @@ document.querySelector("button").addEventListener("click", function (e) {
   }
 });
 
+//add task
 const taskCreations = () => {
   const taskValue = document.querySelector("#task").value;
   const text = document.createTextNode(taskValue);
@@ -26,17 +17,12 @@ const taskCreations = () => {
   const box = document.createElement("input");
   const ul = document.querySelector("ul");
   let tracker = document.querySelector("#tracker");
-  // let count = 0;
   box.type = "checkbox";
   list.appendChild(box);
   list.appendChild(text);
   ul.appendChild(list);
   box.style.marginRight = "10px";
   taskList.push(taskValue);
-
-  /* for (let i = 0; i < taskList.length; i++) {
-    taskList[i] = tracker.innerHTML = i + 1;
-  } */
 
   tracker.innerHTML = taskList.length;
 
