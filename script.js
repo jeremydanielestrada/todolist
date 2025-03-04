@@ -23,7 +23,6 @@ const taskCreations = () => {
   ul.appendChild(list);
   box.style.marginRight = "10px";
   taskList.push(taskValue);
-
   tracker.innerHTML = taskList.length;
 
   //removetask
